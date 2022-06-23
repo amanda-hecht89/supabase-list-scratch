@@ -17,9 +17,10 @@ export default function EndangeredDetails() {
 
   return (
     <div className='animal-detail'>
-      <h2>{endangered}</h2>
-      <a href={endangered.link} target="_blank" rel="noreferrer">ENTRY</a>
-      <p>{endangered}</p>
+      <h2>{endangered.common_name}</h2>
+      <p>{endangered.Order}</p>
+      <p>{endangered.date_extinction}</p>
+      <p>{endangered.former_range}</p>
     </div>
   );
 }
