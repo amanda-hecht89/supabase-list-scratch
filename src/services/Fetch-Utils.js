@@ -1,7 +1,11 @@
-import React from 'react'
+import { client } from './client';
 
-export default function Fetch-Utils() {
-  return (
-    <div>Fetch-Utils</div>
-  )
+export async function getAnimalsAndCount(from, to) {
+  const response = await client.from('endangeredAnimals').select('*', { count: 'exact' }).range(from, to);
+  return response;
+}
+
+export async function getAnimalById(id) {
+  const response = await client.from('endangeredAnimals').select('*').match({ id }).single();
+  return response.data;
 }
