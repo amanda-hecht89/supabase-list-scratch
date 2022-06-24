@@ -9,3 +9,5 @@ export async function getAnimalById(id) {
   const response = await client.from('endangeredAnimals').select('*').match({ id }).single();
   return response.data;
 }
+
+//supabase secret comment//
