@@ -7,3 +7,24 @@ body {
   background-color: coral;
 }
 
+.danger {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  border: 4px dotted green;
+  margin: 10px;
+  
+}
+
+.animal-list a {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+}
+
+.animal-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+

@@ -6,7 +6,7 @@ export default function EndangeredList({ animals }) {
     <div className='animal-list'>
       {
         animals.map((animal, i) =>
-          <Link key={animals.common_name + i + animals.id} to={`/animals/${animals.id}`}>
+          <Link key={animals.common_name + i + animals.id} to={`/animals/${animal.id}`}>
             <div className='danger'>
               <h3>{animal.common_name}</h3>
               <p>{animal.Order}</p>
